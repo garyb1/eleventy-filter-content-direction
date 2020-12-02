@@ -8,6 +8,19 @@ Hi! This is a simple filter that will change the content direction by appending 
 
 By default, the content direction is ltr. By setting the direction as **_rtl_**, content will change it's direction accordingly.
 
+Firstly, you need to add the filter to your eleventy config
+
+```
+const directionFilter = require("eleventy-filter-content-direction");
+
+module.exports = (eleventyConfig) => {
+  eleventyConfig.addFilter("direction", directionFilter);
+};
+
+```
+
+Then you need to add the filter in your markup
+
 ```
 // set direction to rtl
 {{ "something" | direction: 'rtl' }}

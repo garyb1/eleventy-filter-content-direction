@@ -1,6 +1,6 @@
 {
   "name": "eleventy-filter-content-direction",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple eleventy filter to quickly change content direction.",
   "main": "index.js",
   "author": "Gary Byrne",

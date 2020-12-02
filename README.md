@@ -4,7 +4,7 @@ Hi! This is a simple filter that will change the content direction by appending 
 
 ## Installation and Usage
 
-`npm install @garyb1/eleventy-filter-content-direction`
+`npm install eleventy-filter-content-direction`
 
 By default, the content direction is ltr. By setting the direction as **_rtl_**, content will change it's direction accordingly.
 

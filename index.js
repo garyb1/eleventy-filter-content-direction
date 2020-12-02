@@ -1,7 +1,7 @@
 /** Simple right to left paragraph scrolling */
-module.exports = (object, direction = 'rtl') => {
+module.exports = (object, direction) => {
     return `
-        <div dir="${direction || 'ltr'}">
+        <div dir="${['ltr', 'rtl'].includes(direction) ? direction : 'auto'}">
             ${object}
         </div>
     `;

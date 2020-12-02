@@ -6,7 +6,7 @@ Hi! This is a simple filter that will change the content direction by appending 
 
 `npm install eleventy-filter-content-direction`
 
-By default, the content direction is ltr. By setting the direction as **_rtl_**, content will change it's direction accordingly.
+By default, the content direction is ltr. By setting the direction as **_rtl_** or **\_ltr\_\_**, content will change it's direction accordingly.
 
 Firstly, you need to add the filter to your eleventy config
 
@@ -19,11 +19,13 @@ module.exports = (eleventyConfig) => {
 
 ```
 
-Then you need to add the filter in your markup
+Then you need to add the filter in your markup. It's default value is `auto`
 
 ```
 // set direction to rtl
 {{ "something" | direction: 'rtl' }}
-// or set it back to ltr you can just remove it
-{{ "something" | direction }} or {{ "something" }}
+// or set it  to ltr
+{{ "something" | direction: 'ltr' }}
+// if unsure, it will default to auto which lets the user agent decide.
+{{ "something" | direction }}
 ```

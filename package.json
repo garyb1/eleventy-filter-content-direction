@@ -1,8 +1,16 @@
 {
-  "name": "eleventy-filter-content-direction",
+  "name": "@garyb1/eleventy-filter-content-direction",
   "version": "1.0.0",
   "description": "A simple eleventy filter to quickly change content direction.",
   "main": "index.js",
   "author": "Gary Byrne",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garyb1/eleventy-filter-content-direction.git"
+  },
+  "bugs": {
+    "url": "https://github.com/garyb1/eleventy-filter-content-directionissues"
+  },
+  "homepage": "https://github.com/garyb1/eleventy-filter-content-direction"
 }
